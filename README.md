@@ -32,18 +32,17 @@ Note: Lombok Project is used for POJO classes. For IDE setup follow https://proj
 URI: /schedule/generate  
 Method: POST
   
-###Request Header  
-	Content-Type: application/x-www-form-urlencoded
+Request Header  
+	Content-Type: application/x-www-form-urlencoded  
+Request Body  
+	Parameter Name: startDate    
+	Possible value: Date in format 'yyyy-MM-dd'    
+	Example: startDate=2018-03-26  
   
-###Request Body  
-	Parameter Name: startDate  
-	Possible value: Date in format 'yyyy-MM-dd'  
-	Example: startDate=2018-03-26
-  
-###Response Header  
-	Content-Type: application/json
-###Response Body
-	Schedule object  
+Response Header  
+	Content-Type: application/json  
+Response Body  
+	Schedule object    
 	
 ## Build and Run
 
