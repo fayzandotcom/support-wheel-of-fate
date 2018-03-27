@@ -7,6 +7,8 @@ Rules
 - An engineer cannot have half day shifts on consecutive days.
 - Each engineer should have completed one whole day of support in any 2 week period.
 
+Application demo link: http://45.76.152.208:8082/
+
 ## Description
 
 ### Technology Stack
@@ -27,8 +29,6 @@ Spring Cloud Function is used to support serverless providers. Only AWS Lambda h
 
 
 Note: Lombok Project is used for POJO classes. For IDE setup follow https://projectlombok.org/setup/overview
-
-Application demo link: http://45.76.152.208:8082/
 
 ## REST API
 
