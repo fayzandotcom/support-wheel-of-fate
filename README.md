@@ -62,9 +62,9 @@ Note: The default port set for this application is 8081 in application.propertie
 ## AWS Lambda
 
 - Application is deployed on AWS Lambda as a Function.
-- AWS API Gateway is used to create an API to execute the function
+- AWS API Gateway is used to execute the function
 
-API URL: <URL will be provided separately>  
+API URL: [URL will be provided separately]  
 Method: POST  
 Request:  
 	Content-Type: application/json  
