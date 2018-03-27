@@ -25,7 +25,10 @@ A simple web page with Bootstrap and jQuery is used to call the REST API and dis
 ### Cloud
 Spring Cloud Function is used to support serverless providers. Only AWS Lambda handler is implemented in this project.
 
+
 Note: Lombok Project is used for POJO classes. For IDE setup follow https://projectlombok.org/setup/overview
+
+Application demo link: http://45.76.152.208:8082/
 
 ## REST API
 
