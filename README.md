@@ -1,6 +1,6 @@
 # Support Wheel of Fate
 
-A REST API to generate a schedule that shows whose turn is it to support the business by selecting two engineers at random to both complete a half day of support (shift) each.
+A REST API to generate schedule that shows whose turn is it to support the business by selecting two engineers at random to both complete a half day of support (shift) each.
 
 Rules
 - An engineer can do at most one half day shift in a day.
@@ -18,7 +18,6 @@ Rules
 
 ### Application
 Application structure is based on Controller -> Service -> Repository pattern. An in-memory database is used and sample data is preloaded from 'data.sql' file in classpath on application start.
-Maven is used for dependencies and project build.
 
 ### UI View
 A simple web page with Bootstrap and jQuery is used to call the REST API and display the return data. Spring thymeleaf is used for server-side rendering of the page. 
@@ -31,29 +30,31 @@ Note: Lombok Project is used for POJO classes. For IDE setup follow https://proj
 ## REST API
 
 `
-URI: /schedule/generate
-Method: POST
-Request:
-	Content-Type: application/x-www-form-urlencoded
-	Body: 
-		Parameter Name: startDate
-		Possible value: Date in format 'yyyy-MM-dd'
-		Example: startDate=2018-03-26
-Response:
-	Content-Type: application/json
-	Body: Schedule object
+URI: /schedule/generate  
+Method: POST  
+Request:  
+	Content-Type: application/x-www-form-urlencoded  
+	Body:  
+		Parameter Name: startDate  
+		Possible value: Date in format 'yyyy-MM-dd'  
+		Example: startDate=2018-03-26  
+Response:  
+	Content-Type: application/json  
+	Body: Schedule object  
 `
 	
 ## Build and Run
 
-To build the project run following maven command
-`mvn clean package`
+Maven is used for dependencies and project build.
 
-Exceute following command to run the application
-`mvn spring-boot:run`
+To build the project run following maven command   
+`mvn clean package`  
 
-Open the following URL in browser
-`localhost:8081/`
+Exceute following command to run the application  
+`mvn spring-boot:run`  
+
+Open the following URL in browser  
+`localhost:8081/`  
 
 Note: The default port set for this application is 8081 in application.properties file. Web server in the application will start on port 8081
 
@@ -63,17 +64,17 @@ Note: The default port set for this application is 8081 in application.propertie
 - AWS API Gateway is used to create an API to execute the function
 
 `
-API URL: <URL will be provided separately>
-Method: POST
-Request:
-	Content-Type: application/json
-	Body: 
-		{
-			"startDate":"2018-03-26"
-		}
-Response:
-	Content-Type: application/json
-	Body: Schedule object
+API URL: <URL will be provided separately>  
+Method: POST  
+Request:  
+	Content-Type: application/json  
+	Body:  
+		{  
+			"startDate":"2018-03-26"  
+		}  
+Response:  
+	Content-Type: application/json  
+	Body: Schedule object  
 `
 
 	
