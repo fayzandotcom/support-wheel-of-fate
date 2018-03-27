@@ -29,7 +29,6 @@ Note: Lombok Project is used for POJO classes. For IDE setup follow https://proj
 
 ## REST API
 
-`
 URI: /schedule/generate  
 Method: POST  
 Request:  
@@ -41,7 +40,6 @@ Request:
 Response:  
 	Content-Type: application/json  
 	Body: Schedule object  
-`
 	
 ## Build and Run
 
@@ -63,7 +61,6 @@ Note: The default port set for this application is 8081 in application.propertie
 - Application is deployed on AWS Lambda as a Function.
 - AWS API Gateway is used to create an API to execute the function
 
-`
 API URL: <URL will be provided separately>  
 Method: POST  
 Request:  
@@ -75,6 +72,5 @@ Request:
 Response:  
 	Content-Type: application/json  
 	Body: Schedule object  
-`
 
 	
